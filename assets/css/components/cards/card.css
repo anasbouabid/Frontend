@@ -238,8 +238,9 @@
   background-color: #4361ee;
   color: #fff;
   border: none;
-  width: 18rem;
-  margin: 0 auto;
+  width: 31.33%;
+  margin: 0 1%;
+  margin-bottom: 1rem;
   -webkit-box-shadow: 4px 6px 10px -3px #bfc9d4;
   box-shadow: 4px 6px 10px -3px #bfc9d4; }
   .component-card_7 .card-body {

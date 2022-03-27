@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/table/datatable/custom_dt_custom.css">
     <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components/cards/card.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
 </head>
@@ -265,61 +266,40 @@
                             <form method="post" action="">
                                 <div class="form-row mb-2">
                                     <div class="form-group col-md-4">
-                                        <label for="tipo">SELECCIONA EL TIPO DE RESENA</label>
-                                        <select id="tipo" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">Google My Business</option>
-                                        </select>
+                                        <label for="nombre">NOMBRE DEL NEGOCIO</label>
+                                        <input type="text" name="" id="nombre" class="form-control">
                                     </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="lugar">LUGAR</label>
-                                        <select id="lugar" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">...</option>
-                                        </select>
+                                    <div class="form-group col-md-4">
+                                        <label for="direccion">DIRECCION</label>
+                                        <input type="text" name="" id="direccion" class="form-control">
+
                                     </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="estrellas">SELECCIONA EL NUMERO DE ESTRELLAS</label>
-                                        <select id="estrellas" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">...</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <label for="comentario">COMENTARIO</label>
-                                        <textarea class="form-control" id="comentario" placeholder="COMENTARIO"></textarea>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="genero">SELECCIONA EL GENERO</label>
-                                        <select id="genero" class="form-control">
+                                    <div class="form-group col-md-4">
+                                        <label for="platforma">PLATFORMA DE NEGOCIO</label>
+                                        <select id="platforma" class="form-control">
                                             <option>Selecciona</option>
                                             <option value="1">...</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="rango">SELECCIONA EL RANGO DE EDAD</label>
-                                        <select id="rango" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">...</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <label for="basicFlatpickr">ELIGE LA FECHA ESTIMADA DE PUBLICACION</label>
-                                        <input id="basicFlatpickr" value="2020-09-04" class="form-control flatpickr flatpickr-input active" type="text" placeholder="Select Date.." readonly="readonly">
+                                        <label for="url">URL DEL NEGOCIO</label>
+                                        <input type="text" name="" id="url" class="form-control">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="pais">SELECCIONA EL PAIS</label>
-                                        <select id="pais" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">...</option>
-                                        </select>
+                                        <label for="sitio">SITIO WEBO</label>
+                                        <input type="text" name="" id="sitio" class="form-control">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="pais">SELECCIONA LA PROVINCIA</label>
-                                        <select id="pais" class="form-control">
-                                            <option>Selecciona</option>
-                                            <option value="1">...</option>
-                                        </select>
+                                        <label for="calification">CALIFICATION GLOBAL ACTUAL</label>
+                                        <input type="text" name="" id="calification" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="numero">NUMERO DE RESENAS ACTUAL</label>
+                                        <input type="text" name="" id="numero" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="correo">CORREO ELECTRONICO DEL NEGOCIO</label>
+                                        <input type="email" name="" id="correo" class="form-control">
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-warning mt-3">Cancelar</button>
@@ -330,12 +310,109 @@
                 </div>
 
                 <div class="row layout-spacing">
-                    <div class="col-lg-12">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-content widget-content-area">
-                                
+                    <div class="col-lg-12 d-flex flex-wrap">
+
+                        <div class="card component-card_7">
+                            <div class="card-body">
+                                <h5 class="card-text font-weight-bold">NOMBRE</h5>
+                                <h6 class="rating-count w-"><span class="font-weight-bold">Email: </span> <span>user@mail.com</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Téléfono: </span> <span>123456789</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Sitio web: </span><span>www.sitio.es</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Direccion: </span><span>rty tyty 45678</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Resenas realizadas: </span><span>20 resenas</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Plataforma: </span><span>Google My Business</span></h6>
+                                <div class="rating-stars">
+                                    <h6 class="rating-count font-weight-bold d-inline">Valuacion: </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="card component-card_7">
+                            <div class="card-body">
+                                <h5 class="card-text font-weight-bold">NOMBRE</h5>
+                                <h6 class="rating-count w-"><span class="font-weight-bold">Email: </span> <span>user@mail.com</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Téléfono: </span> <span>123456789</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Sitio web: </span><span>www.sitio.es</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Direccion: </span><span>rty tyty 45678</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Resenas realizadas: </span><span>20 resenas</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Plataforma: </span><span>Google My Business</span></h6>
+                                <div class="rating-stars">
+                                    <h6 class="rating-count font-weight-bold d-inline">Valuacion: </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card component-card_7">
+                            <div class="card-body">
+                                <h5 class="card-text font-weight-bold">NOMBRE</h5>
+                                <h6 class="rating-count w-"><span class="font-weight-bold">Email: </span> <span>user@mail.com</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Téléfono: </span> <span>123456789</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Sitio web: </span><span>www.sitio.es</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Direccion: </span><span>rty tyty 45678</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Resenas realizadas: </span><span>20 resenas</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Plataforma: </span><span>Google My Business</span></h6>
+                                <div class="rating-stars">
+                                    <h6 class="rating-count font-weight-bold d-inline">Valuacion: </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card component-card_7">
+                            <div class="card-body">
+                                <h5 class="card-text font-weight-bold">NOMBRE</h5>
+                                <h6 class="rating-count w-"><span class="font-weight-bold">Email: </span> <span>user@mail.com</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Téléfono: </span> <span>123456789</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Sitio web: </span><span>www.sitio.es</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Direccion: </span><span>rty tyty 45678</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Resenas realizadas: </span><span>20 resenas</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Plataforma: </span><span>Google My Business</span></h6>
+                                <div class="rating-stars">
+                                    <h6 class="rating-count font-weight-bold d-inline">Valuacion: </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card component-card_7">
+                            <div class="card-body">
+                                <h5 class="card-text font-weight-bold">NOMBRE</h5>
+                                <h6 class="rating-count w-"><span class="font-weight-bold">Email: </span> <span>user@mail.com</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Téléfono: </span> <span>123456789</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Sitio web: </span><span>www.sitio.es</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Direccion: </span><span>rty tyty 45678</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Resenas realizadas: </span><span>20 resenas</span></h6>
+                                <h6 class="rating-count"><span class="font-weight-bold">Plataforma: </span><span>Google My Business</span></h6>
+                                <div class="rating-stars">
+                                    <h6 class="rating-count font-weight-bold d-inline">Valuacion: </h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                       
                     </div>
                 </div>
 
